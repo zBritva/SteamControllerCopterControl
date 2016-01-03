@@ -87,19 +87,19 @@ class PWMControl:
         if self.log == True:
             print 'roll: ' + str(self.append + self.__safe__(percentage))
 
-        self.throttle_pwm.ChangeDutyCycle(self.append + self.__safe__(percentage))
+        self.roll_pwm.ChangeDutyCycle(self.append + self.__safe__(percentage))
 
     def set_yaw(self, percentage):
         if self.log == True:
             print 'yaw: ' + str(self.append + self.__safe__(percentage))
 
-        self.throttle_pwm.ChangeDutyCycle(self.append + self.__safe__(percentage))
+        self.yaw_pwm.ChangeDutyCycle(self.append + self.__safe__(percentage))
 
     def set_pitch(self, percentage):
         if self.log == True:
             print 'pitch: ' + str(self.append + self.__safe__(percentage))
 
-        self.throttle_pwm.ChangeDutyCycle(self.append + self.__safe__(percentage))
+        self.pitch_pwm.ChangeDutyCycle(self.append + self.__safe__(percentage))
 
     # def set_flightmode(self, percentage):
     #     if self.log == True:
