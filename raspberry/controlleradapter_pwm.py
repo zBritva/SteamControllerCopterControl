@@ -3,7 +3,6 @@ __author__ = 'zBritva'
 
 import RPi.GPIO as GPIO
 
-
 class PWMControl:
     throttle_pwm = None
     roll_pwm = None

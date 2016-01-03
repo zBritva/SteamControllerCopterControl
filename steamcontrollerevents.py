@@ -7,7 +7,7 @@ import sys
 from steamcontroller import SteamController, SCButtons
 from steamcontroller.events import EventMapper, Pos
 from steamcontroller.uinput import Keys
-from raspberry.controlleradapter import PWMControl
+from raspberry.controlleradapter_pwm import PWMControl
 
 
 class ControlLinker:
